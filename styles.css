@@ -1,0 +1,49 @@
+/* Общие стили для всех списков */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Стили для папок */
+  .folder {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  /* Стили для файлов */
+  .file {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #eaeaea;
+    border: 1px solid #ddd;
+  }
+  
+  /* Стили для ссылок внутри папок и файлов */
+  .folder a,
+  .file a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Стили для активных папок и файлов */
+  .folder.active,
+  .file.active {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+  }
+  
+  /* Стили для подпапок */
+  .folder ul {
+    padding-left: 20px;
+  }
+  
+  /* Стили для файлов внутри папок */
+  .folder ul.file {
+    padding-left: 30px;
+  }
